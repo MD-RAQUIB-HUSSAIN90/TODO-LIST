@@ -6,7 +6,7 @@ let ul = document.querySelector("ul");
 // ADD FUNCTIONALITY
 btn.addEventListener("click", function () {
   let li = document.createElement("li");
-  if (input.value === "") {
+  if (input.value === "" || input.value === " ") {
     alert("Please enter a task");
     return;
   }
