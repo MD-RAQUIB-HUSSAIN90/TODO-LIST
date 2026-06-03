@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+ 
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  height: 80vh;
+  overflow: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  color: #333;
+}
+
+.child {
+  margin-bottom: 15px;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+#taskInput:focus {
+  border-color: #667eea;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#addTaskButton {
+  background: #667eea;
+  color: white;
+}
+
+#addTaskButton:hover {
+  background: #5563d6;
+}
+
+.delete {
+  background: crimson;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.delete:hover {
+  background: darkred;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#taskList li {
+  background: #f4f4f4;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 5px solid #667eea;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    height: 85vh;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    height: 90vh;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  #taskInput {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .btns button {
+    width: 100%;
+  }
+
+  #taskList li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
