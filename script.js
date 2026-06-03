@@ -1,8 +1,7 @@
 let input = document.querySelector("input");
 let btn = document.querySelector("button");
 let ul = document.querySelector("ul");
-let deleteBtn = document.querySelector(".delete");
-let li = document.createElement("li");
+
 
 // ADD FUNCTIONALITY
 btn.addEventListener("click", function () {
