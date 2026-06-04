@@ -21,15 +21,15 @@ btn.addEventListener("click", function () {
     
   deleteBtn.classList.add("delete");
   // APPEND DELETE BUTTON TO LI
-  li.appendChild(deleteBtn,clearBtn);
+  li.appendChild(deleteBtn);
   ul.appendChild(li);
   // DELETE FUNCTIONALITY
   deleteBtn.addEventListener("click", function () {
     li.remove();
   });
-    clearBtn.addEventListener("click", function () {
-      clearBtn.stopPropagation()
-    li.style.textDecoration="line-through();
+   // clearBtn.addEventListener("click", function () {
+     // clearBtn.stopPropagation()
+    //li.style.textDecoration="line-through();
   });
   input.value = "";
 }
