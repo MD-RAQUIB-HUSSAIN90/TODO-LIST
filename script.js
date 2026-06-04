@@ -15,7 +15,7 @@ btn.addEventListener("click", function () {
   li.classList.add("list-item");
   // CREATE DELETE BUTTON
   let deleteBtn = document.createElement("button");
-      let clearBtn = document.createElement("button")
+     
   deleteBtn.textContent = "Delete";
     clearBtn.textContent = "clear";
     
