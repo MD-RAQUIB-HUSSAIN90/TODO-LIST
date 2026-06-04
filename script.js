@@ -21,7 +21,7 @@ btn.addEventListener("click", function () {
     
   deleteBtn.classList.add("delete");
   // APPEND DELETE BUTTON TO LI
-  li.appendChild(deleteBtn);
+  li.appendChild(deleteBtn,clearBtn);
   ul.appendChild(li);
   // DELETE FUNCTIONALITY
   deleteBtn.addEventListener("click", function () {
