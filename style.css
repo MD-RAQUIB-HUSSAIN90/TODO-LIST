@@ -6,7 +6,6 @@
 }
 
 body {
- 
   min-height: 100vh;
   padding: 10px;
   display: flex;
@@ -18,7 +17,7 @@ body {
 .container {
   width: 90%;
   max-width: 500px;
-  height: 80vh;
+  height: 70vh;
   overflow: auto;
   background: #fff;
   padding: 25px;
@@ -80,9 +79,19 @@ h2 {
   padding: 5px 8px;
   font-size: 12px;
 }
+.got {
+  background: rgb(22, 130, 10);
+  color: white;
+  border-radius: 8px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
 
 .delete:hover {
   background: darkred;
+}
+.got:hover {
+  background: rgb(17, 88, 13);
 }
 
 #taskList {
@@ -96,15 +105,20 @@ h2 {
   margin-bottom: 10px;
   border-radius: 8px;
   border-left: 5px solid #667eea;
-  font-size: 16px;
-  word-wrap: break-word;
-}
-.list-item {
+  font-size: 18px;
+  /* word-wrap: break-word; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.btn-box {
+  padding: 10px;
 
+  display: flex;
+
+  justify-content: space-between;
+  gap: 10px;
+}
 
 /* Tablet */
 @media (max-width: 768px) {
