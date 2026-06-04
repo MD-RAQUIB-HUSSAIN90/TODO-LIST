@@ -23,15 +23,15 @@ btn.addEventListener("click", function () {
   deleteBtn.classList.add("delete");
 
   // CREATE "GOT" BUTTON
-  let got = document.createElement("button");
-  got.textContent = "Got";
-  got.classList.add("got");
+  let done = document.createElement("button");
+  done.textContent = "Done";
+  done.classList.add("Done");
   let div = document.createElement("div");
   div.classList.add("btn-box");
   li.append(div);
 
   // APPEND DELETE BUTTON TO LI
-  div.appendChild(got);
+  div.appendChild(don);
   div.appendChild(deleteBtn);
   ul.appendChild(li);
 
