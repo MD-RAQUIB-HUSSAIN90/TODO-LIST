@@ -20,27 +20,40 @@ body {
   height: 80vh;
   overflow: auto;
   background: #fff;
-  padding: 25px;
+  padding: 0px 20px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(46, 51, 61, 1);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 10px 0px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 5px;
   color: #333;
+  font-size: 2em;
 }
 
 .child {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #taskInput {
   width: 100%;
-  padding: 12px;
+  padding: 8px;
   border: 2px solid #ddd;
   border-radius: 8px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   outline: none;
+  box-shadow: 0 10px 25px rgba(46, 51, 61, 0.3);
   font-size: 16px;
 }
 
@@ -50,12 +63,13 @@ h2 {
 
 .btns {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
 .btns button {
-  flex: 1;
-  padding: 12px;
+  width: 40%;
+  padding: 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -63,12 +77,20 @@ h2 {
   font-weight: bold;
 }
 
+#deleteAll {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
 #addTaskButton {
-  background: #667eea;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
 }
 
 #addTaskButton:hover {
+  background: #5563d6;
+}
+#deleteAll:hover {
   background: #5563d6;
 }
 
@@ -77,14 +99,14 @@ h2 {
   color: white;
   border-radius: 8px;
   padding: 5px 8px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .got {
   background: rgb(22, 130, 10);
   color: white;
   border-radius: 8px;
   padding: 5px 8px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .delete:hover {
@@ -94,28 +116,26 @@ h2 {
   background: rgb(17, 88, 13);
 }
 
-#taskList {
+.taskList {
   list-style: none;
   margin-top: 20px;
 }
 
-#taskList li {
+.taskList li {
   background: #f4f4f4;
-  padding: 12px;
+  padding: 4px;
   margin-bottom: 10px;
   border-radius: 8px;
   border-left: 5px solid #667eea;
-  font-size: 18px;
-  /* word-wrap: break-word; */
+  font-size: 16px;
+  word-wrap: break-word;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .btn-box {
-  padding: 10px;
-
+  padding: 1px;
   display: flex;
-
   justify-content: space-between;
   gap: 10px;
 }

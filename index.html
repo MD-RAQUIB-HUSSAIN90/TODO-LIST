@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do list</title>
     <link rel="stylesheet" href="style.css">
+
+
+
+
+    
 </head>
 
 <body>
 
     <div class="container">
-        <h2>To-do List</h2>
-        <div class="child">
-            <input type="text" id="taskInput" placeholder="Enter a task" >
+        <div class="sticky">
+            <h2>To-do List</h2>
+            <div class="child">
+                
+                <input type="text" id="taskInput" placeholder="Enter a task">
             </div>
             <div class="btns">
-            <button id="addTaskButton">Add Task</button>
+                <button id="addTaskButton">Add Task</button>
+                <button id="deleteAll">Delete All</button>
             </div>
-        
-        <ul id="taskList">
-          
+        </div>
+
+
+        <ul class="taskList">
+
         </ul>
-        <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
