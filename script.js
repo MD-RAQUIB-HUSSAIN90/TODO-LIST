@@ -15,7 +15,10 @@ btn.addEventListener("click", function () {
   li.classList.add("list-item");
   // CREATE DELETE BUTTON
   let deleteBtn = document.createElement("button");
+      let clearBtn = document.createElement("button")
   deleteBtn.textContent = "Delete";
+    clearBtn.textContent = "clear";
+    
   deleteBtn.classList.add("delete");
   // APPEND DELETE BUTTON TO LI
   li.appendChild(deleteBtn);
@@ -23,6 +26,9 @@ btn.addEventListener("click", function () {
   // DELETE FUNCTIONALITY
   deleteBtn.addEventListener("click", function () {
     li.remove();
+  });
+    clearBtn.addEventListener("click", function () {
+    li.style.textDecoration="line-through();
   });
   input.value = "";
 }
