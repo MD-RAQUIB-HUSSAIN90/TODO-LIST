@@ -22,7 +22,7 @@ btn.addEventListener("click", function () {
   deleteBtn.textContent = "Delete";
   deleteBtn.classList.add("delete");
 
-  // CREATE "GOT" BUTTON
+  // CREATE "DONE" BUTTON
   let done = document.createElement("button");
   done.textContent = "Done";
   done.classList.add("Done");
@@ -31,7 +31,7 @@ btn.addEventListener("click", function () {
   li.append(div);
 
   // APPEND DELETE BUTTON TO LI
-  div.appendChild(don);
+  div.appendChild(done);
   div.appendChild(deleteBtn);
   ul.appendChild(li);
 
@@ -40,8 +40,8 @@ btn.addEventListener("click", function () {
     li.remove();
   });
 
-  // GOT ITEMS
-  got.addEventListener("click", function () {
+  // DONE ITEMS
+  done.addEventListener("click", function () {
     span.style.textDecoration = "line-through";
     span.style.color = "grey";
   });
