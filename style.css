@@ -17,7 +17,7 @@ body {
 .container {
   width: 90%;
   max-width: 500px;
-  height: 70vh;
+  height: 80vh;
   overflow: auto;
   background: #fff;
   padding: 25px;
@@ -137,8 +137,9 @@ h2 {
 @media (max-width: 480px) {
   .container {
     width: 95%;
-    height: 90vh;
+    height: 70vh;
     padding: 15px;
+    overflow: auto;
   }
 
   h2 {
