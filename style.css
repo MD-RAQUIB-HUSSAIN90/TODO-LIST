@@ -101,7 +101,7 @@ h2 {
   padding: 5px 8px;
   font-size: 11px;
 }
-.got {
+.Done {
   background: rgb(22, 130, 10);
   color: white;
   border-radius: 8px;
@@ -112,7 +112,7 @@ h2 {
 .delete:hover {
   background: darkred;
 }
-.got:hover {
+.Done:hover {
   background: rgb(17, 88, 13);
 }
 
