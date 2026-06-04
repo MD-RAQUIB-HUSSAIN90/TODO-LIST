@@ -28,6 +28,7 @@ btn.addEventListener("click", function () {
     li.remove();
   });
     clearBtn.addEventListener("click", function () {
+      clearBtn.stopPropagation()
     li.style.textDecoration="line-through();
   });
   input.value = "";
