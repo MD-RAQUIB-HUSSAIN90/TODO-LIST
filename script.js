@@ -1,7 +1,7 @@
 let input = document.querySelector("input");
 let btn = document.querySelector("button");
 let ul = document.querySelector("ul");
-let child = document.querySelector(".child");
+
 
 // ADD FUNCTIONALITY
 btn.addEventListener("click", function () {
