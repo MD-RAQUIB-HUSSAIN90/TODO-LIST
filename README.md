@@ -22,7 +22,7 @@ A responsive To-Do List application built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-(Add GitHub Pages link here)
+https://comforting-kulfi-3a5a49.netlify.app/
 
 ## Author
 
