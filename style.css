@@ -22,7 +22,7 @@ body {
   background: #fff;
   padding: 0px 20px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(46, 51, 61, 1);
+  box-shadow: 0 10px 25px rgba(48, 51, 61, 1);
 }
 
 .sticky {
@@ -53,7 +53,7 @@ h2 {
   border-right: none;
   border-left: none;
   outline: none;
-  box-shadow: 0 10px 25px rgba(46, 51, 61, 0.3);
+  box-shadow: 0 10px 25px rgba(48, 51, 61, 0.3);
   font-size: 16px;
 }
 
